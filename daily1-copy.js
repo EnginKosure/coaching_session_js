@@ -10,7 +10,7 @@ const users = [
 // for (const val of z){
 //     console.log(val.next());
 // }
-console.log(z);
+// console.log(z);
 
 function findMutuals(arr,n){
     let intObj={}
@@ -32,8 +32,13 @@ function findMutuals(arr,n){
         intArr.push(arr1);
        }
    }
-//    console.log(intArr);
+   console.log(intArr);
 //    intArr.reduce((a,c,i,arr)=>arr.includes(a))
+    intArr.forEach((common) => {
+        common.forEach((data) => {
+            console.log(data);
+        });
+    });
 
 };
 
