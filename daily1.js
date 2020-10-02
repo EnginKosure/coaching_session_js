@@ -8,7 +8,7 @@ const users = [
   ];
 
 function findMutuals(arr,n){
-    const valArr=users.map(x=>Object.values(x)).map(y=>y[2]);
+    const valArr=users.map(x=>Object.values(x)).reduce((a,c,i,arr)=>);
     console.log(valArr);
     // arr.reduce(acc,curr,idx,src){
     //     src[idx].interests[]
