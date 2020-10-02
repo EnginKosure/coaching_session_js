@@ -4,11 +4,20 @@ const users = [
     { id: 1, name: "Jim", interests: ["fitness", "sports", "movies"] },
     { id: 2, name: "Joe", interests: ["cats", "swimming", "movies"] },
     { id: 3, name: "Zoe", interests: ["cars"] },
-    { id: 4, name: "Liv", interests: ["cats, movies"] },
+    { id: 4, name: "Liv", interests: ["cats", "movies"] },
   ];
 
-  const friends = findMutuals(users);
-  
+function findMutuals(arr,n){
+    const valArr=users.map(x=>Object.values(x)).map(y=>y[2]);
+    console.log(valArr);
+    // arr.reduce(acc,curr,idx,src){
+    //     src[idx].interests[]
+    // },{}
+
+};
+
+  const friends = findMutuals(users,2);
+
 //   expected outcome:
 
 // [
